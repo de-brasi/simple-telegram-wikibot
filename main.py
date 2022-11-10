@@ -13,7 +13,7 @@ def telegram_bot(token):
         bot.send_message(message.chat.id, "Hello! This is a Wikipedia bot."
                                           " It will help you quickly find"
                                           " out basic information about anything."
-                                          "Use /find command with your word")
+                                          "Just type word you interested in.")
 
     @bot.message_handler(func=lambda command: True)
     def get_main_info(message: telebot.types.Message):
